@@ -1,0 +1,30 @@
+
+// Function to check if the triangle
+// is equilateral or isosceles or scalene
+
+function checkTriangle(x, y, z)
+{
+	
+	// Check for equilateral triangle
+	if (x == y && y == z)
+		document.write("Equilateral Triangle");
+
+	// Check for isosceles triangle
+	else if (x == y || y == z || z == x)
+		document.write("Isosceles Triangle");
+
+	// Otherwise scalene triangle
+	else
+		document.write("Scalene Triangle");
+}
+
+// Driver Code
+
+	// Given sides of triangle
+	let x = 20, y = 10, z = 10;
+	
+	checkTriangle(x, y, z);
+
+
+
+
